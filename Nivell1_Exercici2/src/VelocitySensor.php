@@ -9,6 +9,8 @@ class VelocitySensor
             return 'Molt lent';
         } elseif ($speed >= 30 && $speed <= 60) {
             return 'Velocitat adequada';
+        } elseif ($speed > 60 && $speed <= 80) {
+            return 'Excés lleu';
         }
     }
 }
