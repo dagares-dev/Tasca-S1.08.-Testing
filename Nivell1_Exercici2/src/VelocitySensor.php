@@ -13,6 +13,8 @@ class VelocitySensor
             return 'Excés lleu';
         } elseif ($speed > 80 && $speed <= 100) {
             return 'Excés moderat';
+        } elseif ($speed >100) {
+            return 'Excés greu';
         }
     }
 }
