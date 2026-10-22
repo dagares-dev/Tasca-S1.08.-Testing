@@ -1,0 +1,15 @@
+{
+    "name": "david/nivell1_exercici2",
+    "autoload": {
+        "classmap": ["src/"]
+    },
+    "authors": [
+        {
+            "name": "David",
+            "email": "dgarciaescami@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^13.4"
+    }
+}
