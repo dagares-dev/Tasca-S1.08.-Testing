@@ -6,15 +6,15 @@ class VelocitySensor
     public function getSpeedThreshold(int $speed): string
     {
         if ($speed < 30) {
-            return 'Molt lent';
-        } elseif ($speed >= 30 && $speed <= 60) {
-            return 'Velocitat adequada';
-        } elseif ($speed > 60 && $speed <= 80) {
-            return 'Excés lleu';
-        } elseif ($speed > 80 && $speed <= 100) {
-            return 'Excés moderat';
-        } elseif ($speed >100) {
-            return 'Excés greu';
-        }
+        return 'Molt lent';
+        } elseif ($speed <= 60) {
+        return 'Velocitat adequada';
+        } elseif ($speed <= 80) {
+        return 'Excés lleu';
+        } elseif ($speed <= 100) {
+        return 'Excés moderat';
     }
+
+    return 'Excés greu';
+}
 }
