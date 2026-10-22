@@ -22,4 +22,10 @@ class VelocitySensorTest extends TestCase
         $velocitySensor = new VelocitySensor();
         $this->assertSame('Excés lleu', $velocitySensor->getSpeedThreshold(72));
     }
+
+    public function testReturnModerateExcessForNinetyThree(): void
+    {
+        $velocitySensor = new VelocitySensor();
+        $this->assertSame('Excés moderat', $velocitySensor->getSpeedThreshold(93));
+    }
 }
